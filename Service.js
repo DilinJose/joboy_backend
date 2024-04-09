@@ -7,10 +7,11 @@ const port = 3000;
 
 app.use(cors());
 
-const data = new URLSearchParams();
-data.append("city", "1");
-data.append("lang", "1");
+// const data = new URLSearchParams();
+// data.append("city", "1");
+// data.append("lang", "1");
 
+const data = { city: "1", lang: "1" };
 const config = {
   headers: {
     Authorization: "Basic YWRtaW46MTIzNA==",
@@ -35,5 +36,5 @@ app.get("/api/service/list", async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Proxy server listening at http://localhost:${port}`);
+  console.log(`Server running at http://localhost:${port}`);
 });
