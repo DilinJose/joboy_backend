@@ -4,9 +4,9 @@
   "description": "",
   "main": "Service.js",
   "scripts": {
-"start":"node Service.js"
+    "start": "node Service.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"nodemon Service.js"
+    "dev": "nodemon Service.js"
   },
   "keywords": [],
   "author": "",
